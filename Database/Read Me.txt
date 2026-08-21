@@ -1,0 +1,32 @@
+1.
+Open Any Web Browser And Go To This Wed Site And Download XAMPP "https://www.apachefriends.org/download.html"
+
+2.
+Then Install A XAMPP Control Panel
+
+3. 
+Open XAMPP Control Panel 
+
+4. 
+Start Apache 
+
+Start MySQL 
+
+5.
+Go Action Manu and click on Admin Button on MySQL Row
+
+6.
+Then Create Database And Database Name Is "jobportal"
+
+7.
+Then Go to Import Button and Select a "jobportal.sql" File
+
+8.
+Click On Import Button
+
+9.
+Open Any Browser And RUN A "register.php" File
+
+10.
+Copy This Type Path Copy On Browser Search Bar "C:\xampp\htdocs\AnyFileNameInYourPC\register.php" And 
+Change A Path Is "localhost/AnyFileNameInYourPC/register.php"
