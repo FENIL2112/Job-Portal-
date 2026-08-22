@@ -108,14 +108,8 @@ CREATE TABLE `jobregistration` (
 --
 
 INSERT INTO `jobregistration` (`id`, `name`, `degree`, `mobile`, `email`, `refer`, `jobpost`) VALUES
-(1, 'Fenil Modi', 'BCA', '1236547895', 'fenilmodi1@gmail.com', 'Vishal', 'Web Developer'),
-(2, 'Gourisankar Pradhan', 'BBA', '1236547579', 'gourisankar1@gmail.com', 'Vandan', 'UI/UX Designer'),
-(3, 'Mukesh Pradhan', 'IT', '1236741579', 'mukesh1@gmail.com', 'Khushbu', 'Frontend Developer'),
-(4, 'Tamanna', 'BBA', '1254786930', 'tannu@example.com', 'Fenil', 'Other'),
-(5, 'Yug', 'BCA', '1236547895', 'yug@example.com', 'Mukesh', 'Full Stack Developer'),
-(6, 'Ayan', 'B.Tech', '1236547890', 'ayan1@example.com', 'Yug', 'Full Stack Developer'),
-(7, 'Uzefa', 'MCA', '7412589635', 'uzefa1@example.com', 'Modi', 'Backend Developer'),
-(8, 'PQR', 'BBA', '0012365478', 'pqr@example.com', 'AAA', 'Frontend Developer');
+(1, 'Admin', 'BCA', '1236547895', 'admin@gmail.com', 'AAA', 'Web Developer'),
+(2, 'User', 'BBA', '0012365478', 'userr@example.com', 'BBB', 'Frontend Developer');
 
 -- --------------------------------------------------------
 
@@ -187,14 +181,8 @@ CREATE TABLE `job_applications` (
 --
 
 INSERT INTO `job_applications` (`id`, `job_id`, `user_id`, `name`, `email`, `mobile`, `degree`, `refer`, `jobpost`, `skills`, `experience`, `resume_link`, `cover_note`, `status`, `admin_notes`, `applied_at`, `updated_at`) VALUES
-(1, 1, 6, 'Fenil Modi', 'fenilmodi1@gmail.com', '1236547895', 'BCA', 'Vishal', 'Web Developer', 'HTML, CSS, JavaScript, PHP, MySQL', 'Fresher / 1 Year', NULL, NULL, 'Applied', NULL, '2026-08-21 09:07:20', '2026-08-21 09:07:20'),
-(2, 1, NULL, 'Gourisankar Pradhan', 'gourisankar1@gmail.com', '1236547579', 'BBA', 'Vandan', 'UI/UX Designer', 'HTML, CSS, JavaScript, PHP, MySQL', 'Fresher / 1 Year', NULL, NULL, 'Under Review', NULL, '2026-08-21 09:07:20', '2026-08-21 09:07:20'),
-(3, 1, NULL, 'Mukesh Pradhan', 'mukesh1@gmail.com', '1236741579', 'IT', 'Khushbu', 'Frontend Developer', 'HTML, CSS, JavaScript, PHP, MySQL', 'Fresher / 1 Year', NULL, NULL, 'Shortlisted', NULL, '2026-08-21 09:07:20', '2026-08-21 09:07:20'),
-(4, 1, NULL, 'Tamanna', 'tannu@example.com', '1254786930', 'BBA', 'Fenil', 'Other', 'HTML, CSS, JavaScript, PHP, MySQL', 'Fresher / 1 Year', NULL, NULL, 'Interview Scheduled', NULL, '2026-08-21 09:07:20', '2026-08-21 09:07:20'),
-(5, 1, NULL, 'Yug', 'yug@example.com', '1236547895', 'BCA', 'Mukesh', 'Full Stack Developer', 'HTML, CSS, JavaScript, PHP, MySQL', 'Fresher / 1 Year', NULL, NULL, 'Selected', NULL, '2026-08-21 09:07:20', '2026-08-21 09:07:20'),
-(6, 1, NULL, 'Ayan', 'ayan1@example.com', '1236547890', 'B.Tech', 'Yug', 'Full Stack Developer', 'HTML, CSS, JavaScript, PHP, MySQL', 'Fresher / 1 Year', NULL, NULL, 'Applied', NULL, '2026-08-21 09:07:20', '2026-08-21 09:07:20'),
-(7, 1, NULL, 'Uzefa', 'uzefa1@example.com', '7412589635', 'MCA', 'Modi', 'Backend Developer', 'HTML, CSS, JavaScript, PHP, MySQL', 'Fresher / 1 Year', NULL, NULL, 'Applied', NULL, '2026-08-21 09:07:20', '2026-08-21 09:07:20'),
-(8, 1, NULL, 'PQR', 'pqr@example.com', '0012365478', 'BBA', 'AAA', 'Frontend Developer', 'HTML, CSS, JavaScript, PHP, MySQL', 'Fresher / 1 Year', NULL, NULL, 'Under Review', NULL, '2026-08-21 09:07:20', '2026-08-21 09:07:20');
+(1, 1, 6, 'Admin', 'admin@gmail.com', '1236547895', 'BCA', 'Vishal', 'Web Developer', 'HTML, CSS, JavaScript, PHP, MySQL', 'Fresher / 1 Year', NULL, NULL, 'Applied', NULL, '2026-08-21 09:07:20', '2026-08-21 09:07:20'),
+(2, 1, NULL, 'User', 'User@example.com', '0012365478', 'BBA', 'AAA', 'Frontend Developer', 'HTML, CSS, JavaScript, PHP, MySQL', 'Fresher / 1 Year', NULL, NULL, 'Under Review', NULL, '2026-08-21 09:07:20', '2026-08-21 09:07:20');
 
 -- --------------------------------------------------------
 
@@ -216,7 +204,7 @@ CREATE TABLE `password_resets` (
 
 INSERT INTO `password_resets` (`id`, `email`, `token`, `expires_at`, `created_at`) VALUES
 (1, 'testuser_1787138632@example.com', '00ee4e73a00059e1176d48c37f7408a1e51b4a70699085420ca88a36d3de037b', '2026-08-19 14:23:52', '2026-08-19 11:23:52'),
-(6, 'fenilmodi1@gmail.com', '382eb11b61bddc9e291555029e22c1276976f51a106a874271f5b568d5f59230', '2026-08-20 13:55:08', '2026-08-20 07:25:08');
+(6, 'admin@gmail.com', '382eb11b61bddc9e291555029e22c1276976f51a106a874271f5b568d5f59230', '2026-08-20 13:55:08', '2026-08-20 07:25:08');
 
 -- --------------------------------------------------------
 
